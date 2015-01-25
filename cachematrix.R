@@ -5,6 +5,8 @@
 ## cacheSolve: retrieves from cache the inverse of the matrix, or sets the inverse if not in cache
 
 ## Write a short comment describing this function
+## input: a matrix
+## set matrix, get matrix, setinverse of matrix, getinverse of matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -27,7 +29,7 @@ cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   m <- x$getinverse()
   if(!is.null(m)) {
-    message("getting cached data")
+    message("getting cached inverse data")
     return(m)
   }
   data <- x$get()
